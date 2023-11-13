@@ -20,7 +20,7 @@ const app = express();
 // };
 const options = {
     credentials: true,
-    origin: ["https://xxxx-private.https://655248499c2d0f0008299d54--timely-starburst-30fda2.netlify.app"],
+    origin: ["https://655248499c2d0f0008299d54--timely-starburst-30fda2.netlify.app"],
 };
   
 app.use(cors(options));
