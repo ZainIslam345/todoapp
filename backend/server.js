@@ -20,12 +20,10 @@ const app = express();
 // };
 const options = {
     credentials: true,
-    origin: ["https://655248499c2d0f0008299d54--timely-starburst-30fda2.netlify.app"],
+    origin: ["hhttps://main--moonlit-bublanina-511e66.netlify.app"],
 };
   
 app.use(cors(options));
-// app.use(cors(corsOptions));
-// app.use(cors()); 
   
 app.use(express.json())
 app.use(express.urlencoded({extended: false}));
