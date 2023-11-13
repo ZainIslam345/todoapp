@@ -13,14 +13,19 @@ connectDB()
 const app = express();
 
 // const corsOptions = {
-//     origin: '*', // Allow any origin
+//     origin: 'https://655248499c2d0f0008299d54--timely-starburst-30fda2.netlify.app/', // Allow any origin
 //     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
 //     credentials: true,
 //     optionsSuccessStatus: 204,
 // };
-
+const options = {
+    credentials: true,
+    origin: ["https://xxxx-private.https://655248499c2d0f0008299d54--timely-starburst-30fda2.netlify.app"],
+};
+  
+app.use(cors(options));
 // app.use(cors(corsOptions));
-app.use(cors()); 
+// app.use(cors()); 
   
 app.use(express.json())
 app.use(express.urlencoded({extended: false}));
